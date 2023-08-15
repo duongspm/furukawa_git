@@ -1,0 +1,333 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media(min-width: 768px){
+  a[href^="tel:"]{
+    pointer-events: none;
+  }
+}
+
+.fixBtn{position: fixed; bottom:0; background-color: #fff;
+background-image: linear-gradient(to right, #e4193a , #c72640); width: 100%;text-align: center; z-index: 50;}
+.fixBtn a{font-size: 30px; color: white;display:inline-block;padding: 15px;transition: 0.5s;}
+.fixBtn a:hover{opacity: 0.7}
+
+body{padding-bottom: 100px;}
+
+@media only screen and (max-width:750px){
+
+
+}
+
+
+.campaignEnd{z-index: 55555; width: 100%; height: 100vh; background-color: hsla(0,0%,19%,0.85); position: fixed; top: 0; left: 0; padding-top: 45vh; text-align: center; color: white;font-size: 2.5vw;font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;}
+
+#campaign .mv{height:auto; margin-bottom:0;}
+#campaign .mv h2{ height: auto; background: none; max-width: 1281px; transform: translate(0,-50%); -webkit-transform: translate(0,-50%); margin: auto; width: 76%; left: 0px; right: 0px; }
+
+
+#campaign  #info{ max-width: 100%; margin: 0 auto 50px; text-align: center; background-image: url(../img/campaign/main_tit_bg_shinhun2020.jpg); background-size: cover; }
+#campaign  #info .txt{padding:50px 0; width: 100%; text-align: center;}
+#campaign  #info .img{position:absolute; top:-7px; right:0; width:51.1%;}
+
+
+#campaign .btnForm{max-width:800px; margin:0 auto 30px; text-align:center; display:block; color:#fff; font-size:28px; letter-spacing:0.2em; padding:29px 0; position:relative;
+background-image: linear-gradient(to right, #e4193a , #c72640); font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;}
+#campaign .btnForm:before{position:absolute; top:0; right:0; bottom:0; left:0; border:4px solid rgba(255,255,255,.5); content:'';}
+#campaign .btnForm:hover{background:#c72640;}
+
+
+#campaign .aboutFair{margin:0 auto 20px; text-align: center; max-width: 1300px;}
+#campaign .aboutFair .tit{color: #bf0020; font-size: 34px; background-color: #ffeaea;padding: 10px 10px;margin-bottom: 10px;}
+
+@media only screen and (max-width:750px){
+    #campaign .aboutFair .tit{font-size: 4.5vw;}
+
+}
+
+#campaign #outline a{text-decoration: underline;}
+#campaign #outline{margin:0 0 0;}
+#campaign #outline table{width:100%; border-top:1px solid #b6b1b4;}
+#campaign #outline th, #campaign #outline td{font-size:18px; line-height:1.5; border-bottom:1px solid #b6b1b4; vertical-align:top;}
+#campaign #outline th{font-weight:bold; width:250px; padding:25px 0 25px 40px;}
+#campaign #outline td{padding:25px 0;}
+#campaign #outline .cap{font-size:10px; line-height:1.4; padding:15px 0 0 15px;}
+
+#formBox{padding:50px 25px 100px; background-color: #fff;  color: #000; font-family:YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";}
+#formBox .inner{max-width:1000px; margin:0 auto;}
+#formBox .tit{
+	font-size: 36px;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+background: rgb(250,36,36);
+background: linear-gradient(169deg, rgba(250,36,36,1) 0%, rgba(152,83,83,1) 100%);	padding: 24px 0;
+	letter-spacing: 0.05em;
+	margin: 0 0 30px;
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+#formBox .questionBox.end{border-bottom:none;}
+.leftBorder::before { content:''; display:inline-block; width:5px; height:1.2em; margin:0 0.5em 0 0; vertical-align:text-bottom; background:#21442e; }
+
+.questionBox dt { flex-basis:330px; align-self:center; }
+.questionBox dd { flex-basis:calc(100% - 350px); }
+.questionBox dd dt { flex-basis:6em; align-self:center; margin:0 0 10px 0; }
+.questionBox dd dd { flex-basis:calc(100% - 8em); margin:0 0 10px 0; }
+.questionBox dd .caption { margin:10px 0; display:block; }
+
+.questionBox { padding:30px 10px; border-bottom:#808080 dashed 1px; }
+.questionBox:last-of-type { margin:0 auto 40px auto; }
+.questionTitle { position:relative; }
+.questionTitle.required::before { content:'必須項目'; display:inline-block; position:absolute; right:0; top:calc( 50% - 0.75em);; color:#fff; padding:0.25em 0.5em; line-height:1; background:#4a9a38; border-radius:0.5em; font-weight:bold; }
+.questionTitle.requiredsub::before { content:'必須項目'; display:inline-block; position:absolute; right:0; top:calc( 50% - 0.75em);; color:#fff; padding:0.25em 0.5em; line-height:1; background:#fff; border-radius:0.5em; font-weight:bold; }
+
+
+#formBox .telBox { background:#f0f7e3; box-sizing:border-box; padding:3% 6%; border-radius:20px; }
+#formBox .telBox dl dt { align-self:center; }
+#formBox .telBox span { display:block; line-height:1.5; }
+#formBox .freecall { background:url(../img/form/icon_freecall_01.png) left center / 40px auto no-repeat; padding:0 0 0 45px; }
+#formBox .telNote { margin:5px 0 0 0; }
+#formBox .btnBox{margin:0 0 70px;}
+#formBox .btnBox ul li { flex-basis:calc(50% - 20px); margin:0 10px; }
+
+/* FORM PARTS */
+input[type=text],
+input[type=tel],
+input[type=mail],
+select { display:block; width:auto; max-width:100%; box-sizing:border-box; border:#ccc solid 1px; border-radius:0.5em; box-shadow:inset 0 0 1.5em  rgba(0,0,0,0.05); padding:0.5em; font-size:18px; }
+textarea { display:block; width:100%; max-width:100%; box-sizing:border-box; border:#ccc solid 1px; border-radius:0.5em; box-shadow:inset 0 0 1.5em  rgba(0,0,0,0.05); padding:0.5em; font-size:18px; resize:vertical; height:210px; }
+select option { font-size:18px; }
+button[type=submit],
+button[type=button] { display:block; cursor:pointer; background: rgb(250,36,36);
+background: linear-gradient(180deg, rgba(250,36,36,1) 0%, rgba(152,83,83,1) 100%);color:#fff; outline:none; padding:1.5em 0; box-sizing:border-box; border-radius:0.5em; font-size:18px; box-shadow:none; width:100%; max-width:410px; border:none;}
+button.active[type=submit] { }
+input[type=text]::placeholder ,
+input[type=tel]::placeholder ,
+input[type=mail]::placeholder ,
+textarea::placeholder { color:#666; }
+.labelBtn { display:inline-block; position:relative; padding:0 0 0 1.2em; margin:0 2em 0.5em 0;}
+.labelBtn input[type=radio],
+.labelBtn input[type=checkbox] { position:absolute; left:0; top:calc(50% - 0.5em); }
+
+/*201909*/
+
+.tokutenBox{max-width:800px; margin:auto; padding: 30px 0; }
+.tokutenBox ul{display: flex; justify-content: space-between; }
+.tokutenBox ul li{margin-bottom: 15px;}
+
+.countdownBox{
+	max-width: 800px;
+	margin: auto;
+	background-color: #faead6;
+	text-align: center;
+	border-radius: 5px;
+	padding: 20px 10px 0;
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 50px;
+}
+.countdownBox p{margin: 0;}
+.countdownBox p:nth-of-type(2){
+	font-size: 27px;
+	padding: 0;
+	line-height: 85px;
+}
+.countdownBox p:nth-of-type(2) span{font-size: 85px; font-family: 'IBM Plex Serif', serif !important;	color: #FF0000;
+}
+
+
+/*202004*/
+
+.mainImg{
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 50px;
+}
+.mainImg .inner{max-width:1500px; margin: 0 auto}
+
+.camp_gaiyo{margin: 40px auto; text-align: center;}
+
+/* 20210414 きっかけのアンケート追加 */
+.block { display: block; }
+.min12em { min-width: 12em; box-sizing: border-box; padding: 0 0 0 1.2em; position: relative; display: inline-block; margin: 0 1em 0.5em 0; font-size: 14px;}
+.min12em input { position: absolute; left: 0; top:50%; transform: translateY(-50%);}
+.min12em label { display: block;}
+.mb10 { margin-bottom: 10px;}
+
+
+
+/*===============================
+             MEDIA
+================================*/
+@media screen and (min-width:0\0) and (min-width:1000px){  /* IE */
+#campaign .btnForm{padding:32px 0 26px;}
+#formBox .tit{padding:30px 0 18px}
+}
+
+@media only screen and (max-width:1500px){
+#campaign #info{padding:0 0 0 30px;}	
+#campaign #info .txt{ margin: 0; padding: 5% 0; }
+#campaign #info .img{width:56.3%;}
+}
+
+@media screen and (max-width:767px) {
+.questionBox dt { flex-basis:100%; text-align:left; margin:0 0 10px 0; }
+.questionBox dt br { display:none; }
+.questionBox dd { flex-basis:100%; }
+.questionTitle.required::before { position:static; }
+
+input[type=text],
+input[type=tel],
+input[type=mail] { width:100%; }
+
+#formBox .telBox dl dt { margin:0 0 20px 0; flex-basis:100%; }
+.campaignEnd{font-size: 5.5vw;}
+}
+
+@media only screen and (max-width:750px){
+	
+#campaign .mv h2{ height: auto; background: none; width: 100%;padding-top: 150px;}
+	
+	
+#campaign #info{padding:0;}
+#campaign #info .txt{padding:16px 15px 10px; width:100%;}
+#campaign #info .img{width:100%; position:static;}
+
+#campaign #outline th, #campaign #outline td{font-size:14px;}
+#campaign #outline th{padding:10px 0 10px 10px; width:100%; display: block }
+#campaign #outline td{padding:10px 0; width:100%; display: block}
+
+#formBox{padding:50px 15px;}
+#formBox .tit{letter-spacing:0; font-size:5.6vw; padding:4vw 0;}
+	
+/*201909*/
+.tokutenBox ul{display: block;}
+.tokutenBox ul li{margin-bottom: 15px; width: 100%; text-align: center;}
+	.countdownBox p:nth-of-type(2) span{font-size: 60px;line-height: 60px; }
+
+
+#formBox .btnBox ul li { flex-basis:calc(100%); margin:0 10px; }
+}
+
+@media only screen and (max-width:480px){
+#campaign .btnForm{padding:4vw 0; font-size:6vw; margin:0 auto 50px;}
+#campaign .btnForm:before{border:2px solid rgba(255,255,255,.5);}
+
+#campaign #outline{margin:0 0 50px;}
+#formBox .tit{margin:0 0 30px;}
+}
+
+
+
+
+
+/*202204*/
+
+
+#camp202204{
+/*
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: url(../img/campaign/202204/bg_contents.jpg);
+	color: #fff;
+	font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif"; 
+*/
+	padding-bottom: 80px;
+}
+
+
+#camp202204 b.yellow{color:#DF423C}
+
+#camp202204 .btnOubo a{background: rgb(250,36,36);
+background: linear-gradient(180deg, rgba(250,36,36,1) 0%, rgba(152,83,83,1) 100%);color: #fff; text-align: center; display: block; font-size: 32px; padding: 30px; width: 800px; margin: 0 auto 150px; display: flex; align-items: center; justify-content: center}
+#camp202204 .btnOubo a img{margin-right: 15px;}
+#camp202204 .row01{font-family:YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif"; max-width: 1200px; margin: 0 auto 60px; padding-top: 80px; font-size: 18px; justify-content: space-between; align-items: center}
+#camp202204 .row01 .col1{width: 48%;padding-top: 40px;}
+#camp202204 .row01 .col2{width: 50%; line-height: 1.8;}
+#camp202204 .row01 .col2 b{ color: #ffc000;}
+
+#camp202204 .row02{margin-bottom: 0px; text-align: center;}
+
+#camp202204 .row03{margin:0 auto 80px; max-width: 1316px;}
+#camp202204 .row03 .outline{color: #000; background-color: #fff; font-family:YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif"; padding: 10px 20px 20px; }
+#camp202204 .row03 .outline a{text-decoration: underline;}
+#camp202204 .row03 .outline{margin:0 0 0;}
+#camp202204 .row03 .outline table{width:100%; border-top:1px solid #b6b1b4;}
+#camp202204 .row03 .outline th, #camp202204 .row03  .outline td{font-size:16px; line-height:1.5; border-bottom:1px solid #b6b1b4; vertical-align:top;}
+#camp202204 .row03  .outline th{font-weight:bold; width:250px; padding:25px 0 15px 20px; background-color: #f3f3f3;}
+#camp202204 .row03  .outline td{padding:25px ;}
+#camp202204 .row03  .outline .cap{font-size:10px; line-height:1.4; padding:15px 0 0 15px;}
+
+#camp202204 .row04{text-align: center;padding-bottom: 80px;}
+#camp202204 .row04 .tit{font-size: 50px; padding-bottom: 10px; margin: 0 auto 20px; border-bottom: 1px solid #ccc; max-width: 1300px;} 
+#camp202204 .row04 .txt{font-size: 22px;margin-bottom: 60px;} 
+#camp202204 .row04 .boxA,
+#camp202204 .row04 .boxB{display:  flex; justify-content: space-between; max-width: 1300px; margin:0 auto 50px; align-items: center}
+
+#camp202204 .row04 .boxA .col1,#camp202204 .row04 .boxB .col2{width: 46%;}
+#camp202204 .row04 .boxA .col2,#camp202204 .row04 .boxB .col1{width: 50%;}
+#camp202204 .row04 .boxA .col2 img,#camp202204 .row04 .boxB .col1 img{width: 100%;}
+#camp202204 .row04 .txtA{font-size: 34px;margin-bottom: 20px;}
+#camp202204 .row04 .txtB{font-size: 16px; text-align: left; line-height: 1.8;}
+
+#camp202204 .row05{max-width: 1300px; margin: 0 auto; padding-bottom: 80px;}
+#camp202204 .row05 .jitsureiTit{font-size: 40px; text-align: center;margin-bottom: 30px;}
+#camp202204 .row05 .picL{margin-bottom: 40px;}
+#camp202204 .row05 .picL figure{margin-bottom: 20px;}
+#camp202204 .row05 .picL .name{display: flex; align-items: center}
+#camp202204 .row05 .picL .name .col1{width: 24%; font-size: 26px; margin-right: 20px;padding-right: 10px; border-right:1px solid #fff;   }
+#camp202204 .row05 .picL .name .col1 span{display: block; font-size: 14px;}
+#camp202204 .row05 .picL .name .col2{width: 70%;}
+#camp202204 .row05 .picS ul{display: flex; justify-content: space-between;  flex-wrap: wrap;}
+#camp202204 .row05 .picS ul li{width: 48%; margin-bottom: 50px; max-width: 600px}
+#camp202204 .row05 .picS ul li figure{margin-bottom: 20px;}
+#camp202204 .row05 .picS ul li .name{font-size: 26px;  border-bottom:1px solid #fff; line-height: 1.5; padding-bottom: 10px; margin-bottom: 15px;}
+#camp202204 .row05 .picS ul li .name span{font-size: 14px; display: block; }
+
+#camp202204 .conceptTxt{text-align: left; margin:0 auto 50px; max-width: 1300px; line-height: 1.7; font-size: 18px;}
+
+.mv_20220711{box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
+
+@media only screen and (max-width:750px){
+	
+    #btnFixed{display: none !important;}
+#camp202204{
+/*
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: url(../img/campaign/202204/bg_contents_sp.jpg);
+*/
+
+}
+	#camp202204 .conceptTxt{padding: 15px;}
+
+#camp202204 .btnOubo a{ padding: 30px; width: 80%; margin: 0 auto 80px; font-size: 4vw;}
+#camp202204 .row01{display: block; padding: 20px; margin-bottom: 40px;}
+#camp202204 .row01 .col1{width: 100%; margin-bottom: 30px;}
+#camp202204 .row01 .col2{width: 100%;}
+#camp202204 .row01 .col2 br{display: none;}
+#camp202204 .row02{margin-bottom: 40px;}
+#camp202204 .row03{padding: 20px; margin-bottom: 40px;}
+#camp202204 .row03 .outline th, #camp202204 .row03 .outline td{font-size:14px;}
+#camp202204 .row03 .outline  th{padding:10px 10px 10px 10px; width:100%; display: block }
+#camp202204 .row03 .outline  td{padding:10px 10px; width:100%; display: block}
+#camp202204 .row04 .tit{font-size: 9vw;line-height: 1.5;} 
+#camp202204 .row04 .txt{font-size: 18px;margin-bottom: 30px; } 
+
+#camp202204 .row04 .boxA,#camp202204 .row04 .boxB{display: flex; flex-wrap: wrap;}
+#camp202204 .row04 .boxA .col1,#camp202204 .row04 .boxB .col2{width: 100%;order: 2; padding: 20px;}
+#camp202204 .row04 .boxA .col2,#camp202204 .row04 .boxB .col1{width: 100%; order: 1}
+#camp202204 .row04{padding-bottom: 40px;}
+	#camp202204 .row05{padding-bottom: 40px;}
+	#camp202204 .row05 .picL figure{margin-bottom: 10px;}
+	#camp202204 .row05 .picL .name{display: block; padding: 15px; }
+	#camp202204 .row05 .picL .name .col1{width: 100%;border-bottom: 1px solid #fff; padding-right: 0; margin-right: 0; padding-bottom: 10px; margin-bottom: 15px;border-right: none; }	
+	#camp202204 .row05 .picL .name .col2{width: 100%;}	
+	#camp202204 .row05 .picS ul{display: block; }
+	#camp202204 .row05 .picS ul li{width: 100%; margin-bottom: 30px;}
+	#camp202204 .row05 .picS .spP{padding: 15px;}
+	#camp202204 .row05 .picS figure img{width: 100%;}
+}

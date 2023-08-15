@@ -1,0 +1,591 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Noto+Serif+JP:wght@400;700&display=swap');
+
+/* CSS Document */
+@media(min-width: 768px){
+    a[href^="tel:"]{pointer-events: none;}
+}
+
+/*ページ固定ボタン用余白*/
+/*body{padding-bottom: 100px;}*/
+#lp #header .headBtn,
+#lp #feature .item1 .tit, #feature .item .cont .tit, 
+#lp #history .tit, #history .tit2,
+#lp #lp .btnForm,
+#lp #lp .boxBtn{font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;}
+
+#lp #header{position:fixed; top:0; left:0; width:100%; background:#fff; z-index:99999;}
+#lp #header h1{padding:10px 0 10px 40px; width:731px;}
+#lp #header .headBtn{width:576px; position:absolute; top:50%; right:17px; transform:translateY(-50%); -webkit-transform:translateY(-50%);}
+#lp #header .headBtn a{position:relative; display:block; color:#fff; text-align:center;}
+#lp #header .headBtn a:before{position:absolute; top:0; right:0; bottom:0; left:0; content:'';}
+#lp #header .headBtn a:nth-of-type(1){background-image: linear-gradient(to right, #e4193a , #c72640); width:51.04%; float:left; font-size:22px; padding:22px 0;}
+#lp #header .headBtn a:nth-of-type(1):before{border:3px solid rgba(255,255,255,.5);}
+#lp #header .headBtn a:nth-of-type(1):hover{background:#c72640;}
+#lp #header .headBtn a:nth-of-type(2),
+#lp #header .headBtn a:nth-of-type(3){width:47.91%; float:right; font-size:18px; padding:4px 0;}
+#lp #header .headBtn a:nth-of-type(2):before,
+#lp #header .headBtn a:nth-of-type(3):before{border:2px solid rgba(255,255,255,.5);}
+#lp #header .headBtn a:nth-of-type(2){background-image: linear-gradient(to right, #37a28d , #308f68); margin:0 0 4px;}
+#lp #header .headBtn a:nth-of-type(2):hover{background:#308f68;}
+#lp #header .headBtn a:nth-of-type(3){background-image: linear-gradient(to right, #dc9f4f , #d18a2c);}
+#lp #header .headBtn a:nth-of-type(3):hover{background:#d18a2c;}
+
+
+
+
+/* Fixed Button */
+.fixBtn{position: fixed; bottom:0; background-color: #fff;
+background-image: linear-gradient(to right, #e4193a , #c72640); width: 100%;text-align: center; z-index: 50;}
+.fixBtn a{font-size: 30px; color: white;display:inline-block;padding: 15px;transition: 0.5s;}
+.fixBtn a:hover{opacity: 0.7}
+
+#btnFixed a:nth-of-type(5){display: none;}
+
+/* Form */
+#formBox{padding:90px 25px 100px; background-color: #fff;  color: #000; font-family:YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";}
+#formBox .inner{max-width:1000px; margin:0 auto;}
+#formBox .tit{ font-size: 36px; color: #fff; text-align: center; border-radius: 5px; padding: 24px 0; letter-spacing: 0.05em; margin: 0 0 30px;
+background: #a84a56; font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", 'Noto Serif JP', serif;}
+#formBox .questionBox.end{border-bottom:none;}
+
+.leftBorder::before { content:''; display:inline-block; width:5px; height:1.2em; margin:0 0.5em 0 0; vertical-align:text-bottom; background:#21442e; }
+
+.questionBox dt { flex-basis:330px; align-self:center; }
+.questionBox dd { flex-basis:calc(100% - 350px); }
+.questionBox dd dt { flex-basis:6em; align-self:center; margin:0 0 10px 0; }
+.questionBox dd dd { flex-basis:calc(100% - 8em); margin:0 0 10px 0; }
+.questionBox dd .caption { margin:10px 0; display:block; }
+
+.questionBox { padding:30px 10px; border-bottom:#808080 dashed 1px; }
+.questionBox:last-of-type { margin:0 auto 40px auto; }
+.questionTitle { position:relative; }
+.questionTitle.required::before { content:'必須項目'; display:inline-block; position:absolute; right:0; top:calc( 50% - 0.75em);; color:#fff; padding:0.25em 0.5em; line-height:1; background:#964e46; border-radius:0.5em; font-weight:bold; }
+.questionTitle.requiredsub::before { content:'必須項目'; display:inline-block; position:absolute; right:0; top:calc( 50% - 0.75em);; color:#fff; padding:0.25em 0.5em; line-height:1; background:#fff; border-radius:0.5em; font-weight:bold; }
+
+#formBox .telBox { background:#f7e4e9; box-sizing:border-box; padding:3% 6%; border-radius:20px; }
+#formBox .telBox dl dt { align-self:center; }
+#formBox .telBox span { display:block; line-height:1.5; }
+#formBox .freecall { background:url(../img/form/icon_freecall_02.png) left center / 40px auto no-repeat; padding:0 0 0 45px; }
+#formBox .telNote { margin:5px 0 0 0; }
+#formBox .btnBox{margin:0 0 70px;}
+#formBox .btnBox ul li { flex-basis:calc(50% - 20px); margin:0 10px; }
+
+/* FORM PARTS */
+input[type=text],
+input[type=tel],
+input[type=mail],
+select { display:block; width:auto; max-width:100%; box-sizing:border-box; border:#ccc solid 1px; border-radius:0.5em; box-shadow:inset 0 0 1.5em  rgba(0,0,0,0.05); padding:0.5em; font-size:18px; }
+textarea { display:block; width:100%; max-width:100%; box-sizing:border-box; border:#ccc solid 1px; border-radius:0.5em; box-shadow:inset 0 0 1.5em  rgba(0,0,0,0.05); padding:0.5em; font-size:18px; resize:vertical; height:210px; }
+select option { font-size:18px; }
+button[type=submit],
+button[type=button] { display:block; cursor:pointer; background: #4c2824; color:#fff; outline:none; padding:1.5em 0; box-sizing:border-box; border-radius:0.5em; font-size:18px; box-shadow:none; width:100%; max-width:410px; border:none;}
+button[type=submit]:hover,
+button[type=button]:hover{background: #a84a56;}
+
+button.active[type=submit] { }
+input[type=text]::placeholder ,
+input[type=tel]::placeholder ,
+input[type=mail]::placeholder ,
+textarea::placeholder { color:#666; }
+.labelBtn { display:inline-block; position:relative; padding:0 0 0 1.2em; margin:0 2em 0.5em 0;}
+.labelBtn input[type=radio],
+.labelBtn input[type=checkbox] { position:absolute; left:0; top:calc(50% - 0.5em); }
+
+@media screen and (min-width:0\0) and (min-width:1000px){  /* IE */
+    #formBox .tit{padding:30px 0 18px}
+       
+#lp  #header .headBtn a:nth-of-type(2), #header .headBtn a:nth-of-type(3){padding:7px 0 1px;}
+
+        
+}
+
+@media screen and (max-width:767px) {
+    
+#lp #header h1{padding:0.8vw 0 0.8vw 2vw; width:51%;}
+#lp #header .headBtn{width:38.5%; right:1.5vw;}
+#lp #header .headBtn a:nth-of-type(1){padding:1.5vw 0; font-size:1.5vw;}
+#lp #header .headBtn a:nth-of-type(2),
+#lp #header .headBtn a:nth-of-type(3){padding:0.35vw 0; font-size:1.2vw;}
+#lp #header .headBtn a:nth-of-type(2){margin:0 0 0.25vw;}
+#lp #header h1{position:static; transform:translateY(0); -webkit-transform:translateY(0); padding:2vw 3vw; width:70%; text-align:center;}	
+#lp #header .headBtn{display:none;}
+	
+    .questionBox dt { flex-basis:100%; text-align:left; margin:0 0 10px 0; }
+    .questionBox dt br { display:none; }
+    .questionBox dd { flex-basis:100%; }
+    .questionTitle.required::before { position:static; }
+
+    input[type=text],
+    input[type=tel],
+    input[type=mail] { width:100%; }
+
+    #formBox .telBox dl dt { margin:0 0 20px 0; flex-basis:100%; }
+}
+
+@media only screen and (max-width:750px){
+    #formBox{padding:50px 15px;}
+    #formBox .tit{letter-spacing:0; font-size:5.6vw; padding:4vw 0;}
+    #formBox .btnBox ul li { flex-basis:calc(100%); margin:0 10px;}
+}
+
+@media only screen and (max-width:480px){
+    #formBox .tit{margin:0 0 30px;}
+}
+
+.block { display: block; }
+.min12em { min-width: 12em; box-sizing: border-box; padding: 0 0 0 1.2em; position: relative; display: inline-block; margin: 0 1em 0.5em 0; font-size: 14px;}
+.min12em input { position: absolute; left: 0; top:50%; transform: translateY(-50%);}
+.min12em label { display: block;}
+.mb10 { margin-bottom: 10px;}
+
+
+/* ------------ Campaign 202304 ------------ */
+#camp2023{font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", 'Noto Serif JP', serif; font-size: 16px; font-weight: normal;}
+#camp2023 .content{max-width: 1230px;}
+#camp2023 .red{color: #b11938;}
+#camp2023 .center{text-align: center;}
+
+.campTit2{font-size: 20px; text-align: center; font-weight: bold; margin: 0 0 10px;}
+
+@media only screen and (max-width:750px){
+    #camp2023{font-size: 14px;}
+    .campTit2{font-size: min(5vw,20px);}
+}
+
+.campTit{position: absolute; top: 40px; -ms-writing-mode:tb-lr; -webkit-writing-mode:vertical-lr; writing-mode:vertical-lr; font-size: 30px; padding-bottom: 1.1em; line-height: 1.1;}
+.campTit p{font-size: 46.67%; color: #b11938; position: absolute; bottom: 0;}
+
+.about .campTit{left: 0.67em;}
+.about .campTit p{left: 3em;}
+
+.point .campTit{right: 0.67em;}
+.point .campTit p{right: 3em;}
+
+@media only screen and (max-width:1024px){
+    .campTit{top: 50px;}
+}
+
+@media only screen and (max-width:750px){
+    .campTit{font-size: 20px; top: calc(65vw + 45px);}
+} 
+
+/* Distance */
+#distance{position: relative; border-bottom: 6px solid #b11938;}
+#distance .inner{position: absolute; top: 13.5vw; left: 0; width: 100%; text-align: center; font-size: min(1.8vw,26px); line-height: 1.8; color: #fff; font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", 'Noto Serif JP', serif; text-shadow: 0 0 0.1em rgba(0,0,0,.3), 0 0 0.2em rgba(0,0,0,.3), 0 0 0.3em rgba(0,0,0,.3), 0 0 0.4em rgba(0,0,0,.3), 0 0 0.5em rgba(0,0,0,.3), 0 0 0.6em rgba(0,0,0,.3);}
+
+#distance h2{font-size: 415%; line-height: 1.2; font-family: 'Cormorant', serif; font-weight: 300;}
+#distance .txtJp{font-size: 115%; display: flex; justify-content: center; align-items: center;}
+#distance .txtJp:before,
+#distance .txtJp:after{content: ''; width: 2.3em; height: 1px; background: #fff;}
+#distance .txtJp:before{margin-right: 0.4em;}
+#distance .txtJp:after{margin-left: 0.4em;}
+#distance .txtEn{font-size: 246%; line-height: 1.1; font-family: 'Cormorant', serif; font-weight: 300;}
+
+@media only screen and (max-width:750px){
+    #distance .inner{top: 28.5%; font-size: 3vw;}
+    #distance h2{font-size: 400%;}
+} 
+
+/* Floating Bnr */
+.floatBnr{position: fixed; top: calc(5vw + 92px); right: -344px; z-index: 1000; display: flex; transition: 1s;}
+.floatBnr.isShow{right: 0;}
+.floatBnr_btn{cursor: pointer;}
+.floatBnr_btn:hover{opacity: .8;}
+
+@media only screen and (max-width:750px){
+    .floatBnr{right: -45.64vw;}
+    .floatBnr_btn{width: 6.9vw;}
+    .floatBnr_hide{width: 45.64vw;}
+}
+
+/* Intro */
+.intro{background: url("../img/campaign/intro_bg.jpg") no-repeat center center/cover; padding: 0 0 90px;}
+
+.introBnr{max-width: 1073px; margin: -120px auto 90px; border: 2px solid #b11938; border-radius: 10px; box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); position: relative; z-index: 10; overflow: hidden; color: #b11938;}
+.introBnr h3{width: 63%; text-align: center; position: absolute; top: 5%; left: 0; font-size: min(2.1vw,23px); line-height: 1; font-weight: bold; z-index: 100;}
+.introBnr h3 span{font-size: min(4.2vw,48px); line-height: 1; padding-top: 0.1em; display: block;}
+
+@media only screen and (min-width:1024px){
+    .introBnr a:hover{opacity: .9;}
+}
+
+@media only screen and (max-width:1024px){
+    .intro{padding: 0 0 40px;}
+    .introBnr{margin: -120px auto 50px;}
+    .introBnr h3{width: 100%; font-size: 3.2vw;}
+    .introBnr h3 span{font-size: 6.5vw; padding-top: 0.3em;}
+}
+
+@media only screen and (max-width:750px){
+    .introBnr{margin: -22vw auto 35px;}
+}
+
+.voice{background: #fff; padding: 3.5% 4%; text-align: center;}
+.voiceTit{font-size: min(6.72vw,28px); line-height: 1.5; color: #b11938; border-bottom: 1px solid #000; padding: 0 0 25px; margin: 0 0 25px;}
+
+.voiceList{display: flex; justify-content: space-between; align-items: center; font-size: min(3vw,15px);}
+.voiceList li:nth-of-type(2),
+.voiceList li:nth-of-type(4){margin: 0 5px;}
+
+.voiceTxt{font-size: min(6vw,25px);}
+.voiceTxt2{font-size: min(9.12vw,38px); line-height: 1.2; font-family: 'Cormorant', serif; font-weight: 300;}
+.voiceTxt3{font-size: min(4.8vw,20px); position: relative; z-index: 1;}
+.voiceTxt3:after{content: ''; position: absolute; top: 50%; left: 0; width: 100%; height: 1px; background: #000; z-index: -1;}
+.voiceTxt3 span{display: inline-block; padding: 0 0.5em; background: #fff;}
+
+@media only screen and (max-width:1024px){
+    .voiceList{display: block;}
+    .voiceList li:nth-of-type(2),
+    .voiceList li:nth-of-type(4){margin: 15px 0;}
+    .voiceTxt3{max-width: 265px; width: 76%; margin: 0 auto;}
+}
+
+@media only screen and (max-width:750px){     
+    .voice{padding: 6% 4%;}
+}
+
+/* About */
+.about{padding: 150px 0; position: relative;}
+.aboutWrap{display: flex; align-items: center; flex-wrap: wrap;}
+.aboutOut{width: 60.16%; text-align: center;}
+.aboutInner{display: inline-block; text-align: left;}
+.aboutInner h3{font-size: 36px; line-height: 1.5; margin: 0 0 10px; text-align: center;}
+.aboutInner h3 i{width: 100%; height: 56px; background: url("../img/campaign/ic_x_black.svg") no-repeat center center/100% 100%; display: block; margin: 7px 0;}
+.aboutInner p{line-height: 2.4; padding: 2em 0 0 0;}
+.aboutImg{width: 39.84%;}
+
+@media only screen and (max-width:1024px){
+    .about{padding: 70px 0;}
+    .aboutOut{width: 100%; padding-bottom: 2.5em;}
+    .aboutImg{width: 100%; text-align: center;}
+}
+
+@media only screen and (max-width:750px){
+    .about{padding: 0;}
+    .aboutWrap{padding: 0;}
+    .aboutInner{display: block; padding: 40px 15px 0 75px;}
+    .aboutInner h3{font-size: 5vw;}
+    .aboutInner h3 i{height: 8vw;}
+    .aboutInner p{line-height: 2; padding: 1.2em 0 0 0;}
+    .aboutImg{order: -1;}
+}
+
+/* Point Common */
+.point{padding: 100px 0;}
+
+.pointHead{display: flex; flex-wrap: wrap; margin: 0 0 80px;}
+.pointHead .img{width: calc(50% + 170px); position: relative;}
+.pointHead .img p{position: absolute; bottom: 10px; left: 10px; color: #fff; font-size: 12px; line-height: 1;}
+.pointHead .outer{width: calc(50% - 170px);}
+.pointHead .inner{max-width: 430px; line-height: 2.4; width: 100%;}
+.pointHead.odd .inner{padding: 30px 30px 0 60px;}
+.pointHead.even .outer{display: flex; justify-content: flex-end;}
+.pointHead.even .inner{padding: 30px 60px 0 30px;}
+
+.pointHead .tit{display: flex; padding: 0 0 15px 20px; border-bottom: 1px solid #000;}
+.pointHead .titBig{padding-bottom: 25px;}
+.pointHead .tit p{width: min(14vw,90px); text-align: center; color: #b11938; font-size: min(2.5vw,12px); line-height: 1.4;}
+.pointHead .tit span{width: min(8.6vw,52px); height: min(8.6vw,52px); margin: 0 auto; border-radius: 100%; background: #b11938; color: #fff; font-size: min(6.3vw,31px); line-height: min(8.6vw,52px); display: block;}
+.pointHead .tit h3{font-size: min(12vw,68px); line-height: 1;}
+.pointHead .tit2{border-bottom: 1px solid #000; font-size: min(5.2vw,30px); line-height: 1.4; padding: 7px 0 5px; text-align: center;}
+.pointHead .txt{font-size: min(5.2vw,30px); line-height: 1.5; margin: 25px 0;}
+.pointHead .illus{text-align: right;}
+
+@media only screen and (max-width:1450px){
+    .pointHead .img{width: 61.72%;}
+    .pointHead .outer{width: 38.28%;}
+}
+
+@media only screen and (max-width:1200px){
+    .pointHead.odd .inner,
+    .pointHead.even .inner{padding: 0 30px;}
+}
+
+@media only screen and (max-width:1024px){
+    .point{padding: 50px 0;}
+    .pointHead{margin: 0 0 40px;}
+    .pointHead .img{order: -1; max-width: 87%; width: calc(100% - 70px) !important; margin: 0 0 30px;}
+    .pointHead .outer{width: 100% !important;}
+    .pointHead .inner{margin: 0 auto; width: 80%; padding: 0 !important;}
+    
+    .pointHead .tit{justify-content: center; padding-right: min(18vw,100px);}
+    .pointHead .titBig{padding-bottom: 15px;}
+    #point6 .pointHead .tit{padding-left: 0; padding-right: 0;}
+    
+}
+
+/* Point1 */
+#point1{background: url("../img/campaign/point01_bg.jpg") no-repeat top center/cover; position: relative;}
+#point1 .pointHead .illus{margin-top: -35px;}
+
+@media only screen and (min-width:1450px){
+    #point1 .pointHead{margin-bottom: 100px;}
+}
+
+@media only screen and (max-width:1024px){
+    #point1 .pointHead .illus{margin-top: -28%;}
+    #point1 .pointHead .illus img{max-width: 114px; width: 30%;}
+}
+
+.entrance{margin: 0 auto; max-width: 1100px; position: relative;}
+.entranceImg{position: absolute; top: -30px; left: 0; width: 33.46%;}
+.entranceImg figure{position: absolute; top: 74.2%; left: 58%; width: 78.27%;}
+.entranceCont{padding-left: 56.81%; text-align: center; font-size: min(2.4vw,20px); line-height: 1.5;}
+.entranceCont figure{margin: 0 0 20px;}
+.entranceCont:after{content: ''; width: 2px; height: 80px; border-right: 3px dotted #b11938; margin: 10px auto 2px; display: block;}
+
+@media only screen and (max-width:750px){
+    .entranceImg{position: relative; top: 0; width: 50%; margin-top: -80px;}    
+    .entranceImg img{width: 100%;}
+    .entranceImg figure{position: relative; margin-top: -32%; top: 0;}
+    .entranceCont{padding: 30px 0 0 0; font-size: min(5vw,20px);}
+}
+
+.tour{background: #fff; border-radius: 15px; border: 3px dotted #b11938; padding: 3% 4%; position: relative; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;}
+.tourCont{width: 46.5%;}
+.tourTxt{color: #b11938; font-size: min(2.6vw,26px); text-align: center;}
+.tourTit{color: #b11938; font-size: min(6.2vw,68px); line-height: 1.6; text-align: center; border-top: 2px solid #b11938; border-bottom: 2px solid #b11938; position: relative; margin: 5px 0 15px;}
+.tourTit:before,
+.tourTit:after{content: ''; position: absolute; left: 0; width: 100%; height: 1px; background: #b11938; display: block;}
+.tourTit:before{top: 5px;}
+.tourTit:after{bottom: 5px;}
+
+.tourImg{width: 50%; position: relative;}
+.tourImg figure{box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.7);}
+.tourImg .label{width: 31.7%; position: absolute; top: -73px; right: -63px;}
+.tourImg .img1{width: 63.76%;}
+.tourImg .img2{width: 44.45%; position: absolute; top: 44%; left: 56%;}
+
+@media only screen and (max-width:1200px){
+    .tourImg .label{right: -10%;}
+}
+
+@media only screen and (max-width:750px){
+    .tour{padding: 20px;}
+    .tourCont{width: 100%;}
+    .tourImg{width: 96%; padding: 8vw 0 5vw;}
+    .tourImg img{width: 100%;}
+    .tourImg .label{top: -4%; right: -8%;}
+    .tourTxt{font-size: min(5vw,26px)}
+    .tourTit{font-size: min(12vw,68px)}
+}
+
+/* Point2 */
+.floorList{margin: 0 0 50px; max-width: 1100px;}
+.floorList li{width: 22.64%; padding: 0 0 17px; text-align: center;}
+.floorList p{padding: 12px 0 0 0;}
+
+.floor{max-width: 1130px;}
+.floorCont{width: 47.8%;}
+.floorCont p{font-size: min(1.7vw,20px); line-height: 1.6; padding: 20px 0 0 0; text-align: center;}
+.floorImg{width: 45.6%; margin: 20px 0 0 0;}
+.floorImg .img1{padding-left: 23.8%;}
+.floorImg .img2{width: 81.8%; margin: -20px 0 0 0;}
+
+@media only screen and (max-width:750px){
+    .floorList li{width: 48%;}
+    .floorList li img{width: 100%;}
+    .floorList p{font-size: min(3.5vw,14px);}
+    
+    .floor img{width: 100%;}
+    .floorCont{width: 100%;}
+    .floorCont p{font-size: min(3.5vw,20px);}
+    .floorImg{width: 100%; order: -1; margin: 0 0 30px;}
+}
+
+/* Point3 */
+#point3{background: url("../img/campaign/point03_bg.jpg") no-repeat top center/cover;}
+
+.wallCont{width: 41.67%;}
+.wallCont .list{margin: 30px 0 10px;}
+.wallCont .list li{text-align: center; padding: 0 0 15px; width: 46.6%;}
+.wallCont .list p{padding: 10px 0 0 0;}
+.wallImg{width: 47.5%;}
+.wallImg .img1{margin: 0 0 35px;}
+.wallImg .img2{padding: 0 3% 0 58%;}
+.wallImg .img3{padding: 0 0 0 3%; width: 61.5%; margin: -31% 0 0 0;}
+
+@media only screen and (max-width:750px){
+    #point3 .pointHead .illus img{max-width: 270px; width: 55%;}
+    
+    .wallCont{width: 100%; margin: 0 0 40px;}
+    .wallImg{width: 100%;}
+    .wall img{width: 100%;}
+}
+
+/* Point4 */
+.exterior{text-align: center;}
+.exterior h4{border: 1px solid #000; padding: 5px 0; margin: 0 0 25px;}
+.exteriorL{width: 65%;}
+.exteriorL .list{padding: 0 0 15px;}
+.exteriorL .list li{margin: 0 0 20px; width: 18.59%;}
+.exteriorL .list p{font-size: 14px; padding: 5px 0 0 0;}
+.exteriorL .img li:nth-of-type(1){width: 64.24%;}
+.exteriorL .img li:nth-of-type(2){width: 32.31%;}
+
+.exteriorR{width: 30.5%;}
+.exteriorR .img{margin: 0 0 35px;}
+
+@media only screen and (max-width:750px){
+    .exteriorL{width: 100%; margin: 0 0 50px;}
+    .exteriorL .list{justify-content: flex-start;}
+    .exteriorL .list li{width: 31%; margin-right: 3.5%;}
+    .exteriorL .list li:nth-of-type(3n){margin-right: 0;}
+    .exteriorL .list li img{width: 100%;}
+    .exteriorR{width: 100%;}
+}
+
+/* Point5 */
+#point5{background: url("../img/campaign/point05_bg.jpg") no-repeat center center/cover;}
+
+.wood{margin: 0 0 50px; align-items: flex-start;}
+.woodCont{width: 32.5%;}
+.woodImg{width: 64%;}
+.woodImg li{width: 22%; text-align: center;}
+.woodImg p{font-size: min(1.5vw,20px); line-height: 1.3; padding: 10px 0 0 0;}
+
+.structureImg{width: 59.84%;}
+.structureCont{width: 34.92%;}
+.structureCont .img{margin: 0 0 20px;}
+
+/*
+.notePhoto{position: relative;}
+.notePhoto:after{content: '写真はHPより抜粋。\a元画像は支給可能でしょうか'; border: 1px solid #da1c24; color: #da1c24; font-size: 10px; text-align: center; padding: 4px 10px; line-height: 1.4; font-weight: bold; position: absolute; background: #fff; white-space: pre;}
+.woodImg.notePhoto:after{top: 50%; right: -30px;}
+.structureCont .img.notePhoto:after{top: 50%; left: 50%; transform: translate(-50%,-50%);}
+@media only screen and (max-width:1279px){
+    .woodImg.notePhoto:after{right: 0;}    
+}
+*/
+
+@media only screen and (max-width:1024px){
+    #point5 .pointHead .txt{margin-bottom: 0;}
+    #point5 .pointHead .illus{margin-top: -50px;}
+    #point5 .pointHead .illus img{max-width: 232px; width: 50%;}
+}
+
+@media only screen and (max-width:750px){
+    .wood{margin: 0; padding-bottom: 10px;}
+    .woodCont{width: 100%; margin: 0 0 30px;}
+    .woodImg{width: 100%;}
+    .woodImg li{width: 47%; margin-bottom: 20px;}
+    .woodImg p{font-size: min(5vw,20px);}
+    
+    .structureImg{width: 100%; margin: 0 0 30px;}
+    .structureCont{width: 100%;}
+}
+
+/* Point6 */
+#point6 .pointHead .img{width: calc(50% - 70px);}
+#point6 .pointHead .outer{width: calc(50% + 70px);}
+#point6 .pointHead .inner{max-width: 650px;}
+
+@media only screen and (max-width:1450px){
+    #point6 .pointHead .img{width: 44.96%;}
+    #point6 .pointHead .outer{width: 55.04%;}
+}
+
+@media only screen and (max-width:1024px){
+    #point6 .pointHead .img{width: 100% !important; max-width: 100% !important; padding: 0 15px;}
+    #point6 .pointHead .img img{width: 100%;}
+}
+
+@media only screen and (max-width:750px){
+    #point6 .pointHead .inner{width: calc(100% - 30px);}
+}
+
+.system{display: flex; justify-content: center; margin: 0 0 60px;}
+.system li{max-width: 196px; text-align: center; font-size: 14px; line-height: 1.5;}
+.system li:not(:last-of-type){margin-right: 37px;}
+.system li:not(:last-of-type) figure:after{content: ''; position: absolute; top: 50%; right: -24px; margin-top: -12px; width: 0; height: 0; border-top: 12px solid transparent; border-left: 12px solid #b11938; border-bottom: 12px solid transparent;}
+.system figure{position: relative;}
+.system figcaption{position: absolute; bottom: 5%; left: 85%; font-size: 12px; line-height: 1;}
+.system .tit{font-size: min(2.5vw,28px); line-height: 1.4; padding: 12px 0 5px; font-weight: bold;}
+
+.system-btn{max-width: 1100px; margin: 0 auto; width: 100%;}
+.system-btn a{width: 100%; height: min(20vw,100px); border-radius: 8px; display: flex; justify-content: center; align-items: center; color: #fff; font-size: min(4.0vw,22px); text-align: center; line-height: 1.3;
+background: linear-gradient(to bottom, #c32b45 0%, #c32b45 50%, #b11938 51%, #b11938 100%);}
+.system-btn a:after{content: ''; width: min(7vw,37px); height: min(7vw,37px); background: url("../img/campaign/ic_arrow.svg") no-repeat top left/100% 100%; margin-left: 15px;}
+.system-btn a:hover{background: #b11938;}
+
+@media only screen and (max-width:750px){
+    .system {flex-wrap: wrap;}
+    .system li{width: calc(33.33% - 17px);}    
+    .system li:not(:last-of-type){margin-right: 25px;}    
+    .system li:not(:last-of-type) figure:after{right: -16px; margin-top: -8px; border-top: 8px solid transparent; border-left: 8px solid #b11938; border-bottom: 8px solid transparent;}
+    
+    .system li:nth-of-type(3){margin-right: 0;}
+    .system li:nth-of-type(3) figure:after{display: none;}
+    .system li:nth-of-type(4) figure:before{content: ''; position: absolute; top: 50%; left: -16px; margin-top: -8px; width: 0; height: 0; border-top: 8px solid transparent; border-left: 8px solid #b11938; border-bottom: 8px solid transparent;}
+    
+    .system li{font-size: min(2.4vw,14px);}
+    .system .tit{font-size: min(4.3vw,28px);}
+    .system li br{display: none;}
+}
+
+/* Message */
+.message{background: #f9ece8; border-bottom: 6px solid #b11938; padding: 50px 15px; text-align: center;}
+.message .tit{font-size: min(3.2vw,28px); line-height: 1.7; font-weight: bold; margin: 0 0 10px;}
+
+@media only screen and (max-width:750px){
+    .message{padding: 30px 15px;}
+    .message .tit{font-size: min(5vw,28px);}
+}
+
+/* Anniversary */
+#anniversary{margin: 75px 0 35px; text-align: center; position: relative;}
+#anniversary h3{position: absolute; top: 0; left: 0; width: 100%; text-align: center; font-size: min(3.2vw,44px); line-height: 1; color: #b11938; font-weight: bold;} 
+#anniversary h3 span{font-size: min(7vw,90px); display: block; padding-top: 0.2em;}
+
+@media only screen and (max-width:750px){
+    #anniversary{margin: 30px 0;}
+    #anniversary h3{font-size: 3.3vw;}
+    #anniversary h3 span{font-size: 6.2vw; padding-top: 0.3em;}
+}
+
+/* Outline */
+.outline{border-top: 1px solid #868686;}
+.outline li{width: 100%; font-size: 14px; line-height: 1.6; border-bottom: 1px solid #868686; padding: 20px 0;}
+.outline .tit{font-size: 17px; font-weight: bold;}
+.outline li.flexBox{align-items: center;}
+.outline li.flexBox p:nth-of-type(1){width: 185px; background: #dfdfdf; text-align: center; align-items: center; justify-content: center; text-align: center; display: flex; min-height: 51px; font-size: 17px; font-weight: bold;}
+.outline li.flexBox p:nth-of-type(2){width: calc(100% - 215px);}
+
+@media only screen and (max-width:750px){
+    .outline li.flexBox{}
+    .outline li.flexBox p:nth-of-type(1){width: 100%; margin: 0 0 10px;}
+    .outline li.flexBox p:nth-of-type(2){width: 100%;}
+}
+
+/* Lightbox */
+.lightBox{max-width:960px; width:100%; background:#fff; margin:0 auto; padding:90px 56px 56px; font-size:16px; line-height:2;}
+.lightBox .lightTit{font-size:38px; line-height:1.3; font-weight:bold; margin:0 0 60px;}
+.lightBox .lightTit2{font-size:20px; font-weight:bold; padding:0 0 0 1.5em; position:relative;}
+.lightBox .lightTit2:before{content:'■'; position:absolute; top:0; left:0; color:#408e60;}
+.lightBox .img{text-align:center; padding:40px 0 0 0;}
+
+#cboxTopLeft,
+#cboxTopRight,
+#cboxBottomLeft,
+#cboxBottomRight,
+#cboxMiddleLeft,
+#cboxMiddleRight,
+#cboxTopCenter,
+#cboxBottomCenter{width:0; height:0;}
+#cboxClose{position:absolute; top:20px; right:25px; background:url(../img/common/icon_close.png) no-repeat; width:41px; height:41px;}
+#cboxLoadedContent{margin:0;}
+
+@media only screen and (max-width:1000px){
+    .lightBox{padding:60px 5vw 5vw;}
+    .lightBox .lightTit{font-size:3.5vw;}
+
+    #cboxClose{width:25px; height:25px; background-size:100% auto; top:15px; right:15px;}
+}
+
+@media only screen and (max-width:750px){
+.lightBox{font-size:14px; line-height:1.7;}	
+.lightBox .lightTit{font-size:20px; margin:0 0 20px;}	
+.lightBox .lightTit2{font-size:16px;}
+.lightBox .img{padding:15px 0 0 0;}	
+}
