@@ -153,7 +153,127 @@ a.async=true,a.src=s,m.parentNode.insertBefore(a,m);})();</script>
         </div>
         <!-- MERIT -->
         <div class="merit__list">
-
+            <div class="merit__item">
+                <div class="meritItem__left font--EbGaramond">
+                    <p class="meritLeft__title">Merit</p>
+                    <p class="meritLeft__number">01</p>
+                </div>
+                <div class="meritItem__right">
+                    <p class="meritRight__lead">日本の四季を快適に。</p>
+                    <h4 class="meritRight__title">国内最高クラスの断熱性能</h4>
+                    <p class="meritRight__desc">四季の気候変動の大きな日本において、自然素材の家で心地よく暮らすために。コーチパネルでは、国内最高クラスの断熱性能を有する断熱材「ネオマフォーム」を採用。一年中快適な住環境を実現します。</p>
+                    <div class="merit__note">
+                        <p class="meritNote__title"><span class="dost">■</span>古河林業の住まいは、現時点で2030年の断熱性能基準をクリア</p>
+                        <div class="meritNote__img">
+                            <img src="../assets/img/campaign_2/merit1-01.jpg" alt="古河林業の住まいは、現時点で2030年の断熱性能基準をクリア">
+                            <img src="../assets/img/campaign_2/merit1-02.jpg" alt="断熱性能（UA値）の">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /MERIT 01 -->
+            <div class="merit__item merit--02">
+                <div class="meritItem__left font--EbGaramond">
+                    <p class="meritLeft__title">Merit</p>
+                    <p class="meritLeft__number">02</p>
+                </div>
+                <div class="meritItem__right">
+                    <div class="merit__inner">
+                        <div class="merit__content">
+                            <p class="meritRight__lead">将来にわたって家計にやさしい。</p>
+                            <h4 class="meritRight__title">光熱費を大幅削減可能</h4>
+                            <p class="meritRight__desc">高い断熱性能により、夏涼しく、冬暖かい住まいを実現。エアコンの稼働を抑えることで、光熱費（ランニングコスト）の大幅な低減が期待できます。</p>
+                        </div>
+                        <div class="merit__img">
+                            <img src="../assets/img/campaign_2/merit2.jpg" alt="30年間に支払う断熱グレード別の総額（光熱費＋断熱資材）">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /MERIT 02 -->
+            <div class="merit__item merit--03">
+                <div class="meritItem__left font--EbGaramond">
+                    <p class="meritLeft__title">Merit</p>
+                    <p class="meritLeft__number">03</p>
+                </div>
+                <div class="meritItem__right">
+                    <div class="merit__inner">
+                        <div class="merit__content">
+                            <p class="meritRight__lead">国産材と最新技術の融合。</p>
+                            <h4 class="meritRight__title">繰り返しの揺れに強い耐震性能</h4>
+                            <p class="meritRight__desc">地震の国、日本。現在の耐震基準をクリアしていても、大きな地震のあとに繰り返し起こる余震のたびに家は弱くなり、倒壊の危険性が増すことも。コーチパネルは、進化したモノコック構造により、繰り返しの揺れに強い木の家を実現します。</p>
+                        </div>
+                        <div class="merit__img">
+                            <img src="../assets/img/campaign_2/merit3.jpg" alt="繰り返しの揺れに強い耐震性能">
+                        </div>
+                    </div>
+                    <div class="merit__listimg">
+                        <figure>
+                            <img src="../assets/img/campaign_2/merit3-01.jpg" alt="メーカー素材">
+                            <figcaption>メーカー素材</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../assets/img/campaign_2/merit3-02.jpg" alt="メーカー素材">
+                            <figcaption>メーカー素材</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../assets/img/campaign_2/merit3-03.jpg" alt="メーカー素材">
+                            <figcaption>メーカー素材</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <!-- /MERIT 03 -->
+            <div class="merit__item merit--04">
+                <div class="meritItem__left font--EbGaramond">
+                    <p class="meritLeft__title">Merit</p>
+                    <p class="meritLeft__number">04</p>
+                </div>
+                <div class="meritItem__right">
+                    <div class="merit__inner">
+                        <div class="merit__content">
+                            <p class="meritRight__lead">永く断熱性能が続く。</p>
+                            <h4 class="meritRight__title">経年劣化しづらい素材</h4>
+                            <p class="meritRight__desc">断熱材の「ネオマフォーム」は、髪の毛の太さほどの微細な機能構造。断熱性の高いガスで発砲し、そのガスをたくさんの気泡の中に閉じ込めることで、25年が経過してもほぼ劣化しない強い断熱性能を持続します。</p>
+                        </div>
+                        <div class="merit__img">
+                            <figure>
+                                <img src="../assets/img/campaign_2/merit4-01.jpg" alt="ネオマフォーム">
+                                <figcaption class="cap__img cap__img--brown">ネオマフォーム</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="../assets/img/campaign_2/merit4-02.jpg" alt="硬質ウレタンフォーム">
+                                <figcaption class="cap__img cap__img--gray">硬質ウレタンフォーム</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /MERIT 04 -->
+            <div class="merit__item merit--04">
+                <div class="meritItem__left font--EbGaramond">
+                    <p class="meritLeft__title">Merit</p>
+                    <p class="meritLeft__number">05</p>
+                </div>
+                <div class="meritItem__right">
+                    <div class="merit__inner">
+                        <div class="merit__content">
+                            <p class="meritRight__lead">日本の森を守る家づくり。</p>
+                            <h4 class="meritRight__title">安心の国産素材100%</h4>
+                            <p class="meritRight__desc">古河林業の「コーチパネル」の枠材と面材には、自社林から計画的に植林・伐採した国産材を100%使用。林業会社である私たちならではの木の家づくりをご提案します。</p>
+                        </div>
+                        <div class="merit__img">
+                            <figure>
+                                <img src="../assets/img/campaign_2/merit5-01.jpg" alt="ネオマフォーム">
+                            </figure>
+                            <figure>
+                                <img src="../assets/img/campaign_2/merit5-02.jpg" alt="硬質ウレタンフォーム">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /MERIT 05 -->
         </div>
         <!-- MERIT -->
 
