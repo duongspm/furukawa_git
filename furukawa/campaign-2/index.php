@@ -96,7 +96,7 @@ a.async=true,a.src=s,m.parentNode.insertBefore(a,m);})();</script>
 
 <!--/mv-->
     
-<!-- <div class="floatBnr"><a class="floatBnr_btn"><img src="../assets/img/campaign/floating_btn.jpg" alt="キャンペーンに応募する"></a><a class="floatBnr_hide" href="#anniversary"><img src="../assets/img/campaign/floating_bnr.jpg" alt="創業148年の林業会社が贈る新商品誕生記念キャンペーン"></a></div>     -->
+<div class="floatBnr"><a class="floatBnr_btn"><img src="../assets/img/campaign/floating_btn.jpg" alt="キャンペーンに応募する"></a><a class="floatBnr_hide" href="#anniversary"><img src="../assets/img/campaign/floating_bnr.jpg" alt="創業148年の林業会社が贈る新商品誕生記念キャンペーン"></a></div>    
 <!--/floatBnr-->
     
 <div id="campaign2">
@@ -498,8 +498,9 @@ a.async=true,a.src=s,m.parentNode.insertBefore(a,m);})();</script>
 
 <!-- JAVASCRIPT --> 
 <script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/lightbox.js"></script>
+<script src="../assets/js/setting_campaign-2.js"></script>
 <script src="../assets/js/setting_common.js"></script>
-
 <!-- KASIKA TRACKING CODE -->
 <script type="text/javascript" src="//panda.kasika.io/tag-manager/?pid=FA5D00AB92EBB07B79DA5D8AB841564C"></script>
 <!-- KASIKA TRACKING CODE -->

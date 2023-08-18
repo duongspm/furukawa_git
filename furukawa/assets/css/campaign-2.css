@@ -16,6 +16,17 @@
     width: calc(100% - 40px);
     margin: 0 auto;
 }
+/* Floating Bnr */
+.floatBnr{position: fixed; top: calc(5vw + 92px); right: -344px; z-index: 1000; display: flex; transition: 1s;}
+.floatBnr.isShow{right: 0;}
+.floatBnr_btn{cursor: pointer;}
+.floatBnr_btn:hover{opacity: .8;}
+
+@media only screen and (max-width:750px){
+    .floatBnr{right: -45.64vw;}
+    .floatBnr_btn{width: 6.9vw;}
+    .floatBnr_hide{width: 45.64vw;}
+}
 /* Distance */
 #distance{position: relative;font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", 'Noto Serif JP', 'EB Garamond', serif;}
 /* #distance .inner{position: absolute; text-shadow: 0 0 0.1em rgba(0,0,0,.3), 0 0 0.2em rgba(0,0,0,.3), 0 0 0.3em rgba(0,0,0,.3), 0 0 0.4em rgba(0,0,0,.3), 0 0 0.5em rgba(0,0,0,.3), 0 0 0.6em rgba(0,0,0,.3);} */
@@ -78,6 +89,9 @@
     .distance__center h2{
         font-size: min(4vw, 25px);
     }
+    .distance__bottom {
+        bottom: 10px;
+    }
 } 
 
 /* Apply */
@@ -105,7 +119,7 @@
     font-weight: bold;
 }
 .apply__subtitle{
-    font-size: 16px;
+    font-size: clamp(11px, 2.6vw, 16px);
     line-height: 1.5;
     font-weight: bold;
 }
@@ -131,7 +145,9 @@
     line-height: 1.3;
     background: linear-gradient(to bottom, #c32b45 0%, #c32b45 50%, #b11938 51%, #b11938 100%);
     transition: 0.2s linear;
-
+}
+.apply__btn:hover {
+    background: linear-gradient(to bottom,#b11938 0%, #b11938 100%);
 }
 .applybtn__icon{
     width: min(7vw,37px);
@@ -161,9 +177,14 @@
         /* max-width: 220px; */
     }
     .apply__title {
-        font-size: min(6vw, 27px);
+        font-size: min(4vw, 27px);
     }
 } 
+@media only screen and (max-width: 375px){
+    .apply__title {
+        font-size: 19px;
+    }
+}
 /* Apply */
 
 /* Intro */
@@ -216,23 +237,23 @@
         margin-right: 0;
     }
     .intro__title {
-        font-size: 27px;
+        font-size: 25px;
     }
     .intro__lead{
         font-size: clamp(13px, 3vw, 18px);
     }
     .intro__desc{
-        padding-top: 20px;
+        padding-top: min(2vw, 20px);
         font-size: 14px;
     }
     .intro__right{
-        margin-top: 20px;
+        margin-top: min(2vw, 20px);
         width: 100%;
     }
 } 
 @media only screen and (max-width: 375px){
     .intro__title {
-        font-size: 18px;
+        font-size: 19px;
     }
 }
 /* Intro */
@@ -253,7 +274,7 @@
 .panel__title{
     font-size: clamp(23px, 5vw, 50px);
     line-height: 1.4;
-    font-weight: 500;
+    font-weight: 600;
 
 }
 .panel__title .font--EbGaramond{
@@ -318,11 +339,11 @@
     font-size: min(2.2vw, 22px);
     line-height: 1.3;
     color: #AA8420;
-    font-weight: 500;
+    font-weight: 600;
 }
 .meritRight__title{
     font-size: min(3.5vw, 43px);
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.4;
     color: #AA8420;
 }
@@ -337,6 +358,7 @@
     font-size: 17px;
     padding-bottom: 6px;
     border-bottom: 1px solid #888888;
+    font-weight: bold;
 }
 .meritNote__img{
     margin-top: 23px;
@@ -493,13 +515,15 @@
     }
 } 
 @media only screen and (max-width: 568px){
+    .panel__box{
+        padding: 10px 10px 0 10px;
+        border: 1px solid #AA8420
+    }
     .merit__listimg figure {
         margin-top: 5px; 
         width: fit-content;
         margin-right: 0 !important;
     }
-}
-@media only screen and (max-width: 468px){
     .merit__item{
         flex-direction: column;
     }
@@ -529,6 +553,37 @@
     .meritRight__lead {
         font-size: 13px;
     }
+}
+@media only screen and (max-width: 468px){
+    /* .merit__item{
+        flex-direction: column;
+    }
+    .meritItem__right{
+        width: 100%;
+    }
+    .meritItem__left {
+        width: 100%;
+        padding-right: 0;
+        align-items: flex-start;
+    }
+    .meritLeft__title {
+        font-size: min(4vw, 21px);
+    }
+    .meritLeft__number {
+        font-size: min(14vw, 85px);
+    }
+    .meritRight__title {
+        font-size: min(6vw, 43px);
+    }
+    .meritItem__right::before {
+        height: min(13vw, 93px);
+    }
+    .meritItem__right {
+        padding-left: 10px;
+    }
+    .meritRight__lead {
+        font-size: 13px;
+    } */
     .panel__title {
         font-size: clamp(17px, 5vw, 50px);
     }
@@ -626,7 +681,7 @@
 }
 .houseDesign__tag p{
     font-size: min(2vw, 25px);
-    line-height: 1.6;
+    line-height: 1.7;
     color: #ffffff;
 }
 .houseDesign__desc{
@@ -692,7 +747,7 @@
 }
 .building--01 .building__img figure:nth-child(2){
     position: relative;
-    transform: translateY(17px);
+    transform: translateY(26px);
 }
 .building--02 .building__img figure:nth-child(1){
     margin-right: 25px;
@@ -703,7 +758,7 @@
 }
 .design__bottom{
     margin-top: min(2vw, 30px);
-    padding: min(2vw, 20px);
+    padding: min(2vw, 22px);
     border: 1px solid #AA8420;
     text-align: center;
     background: #ffffff;
@@ -711,7 +766,7 @@
 .design__bottom p{
     font-size: clamp(11px, 2.3vw, 23px);
     font-weight: bold;
-    line-height: 1.6;
+    line-height: 1.5;
     color: #AA8420;
 }
 @media only screen and (max-width: 750px){
@@ -746,6 +801,7 @@
     }
     .design__title {
         font-size: min(6.7vw, 35px);
+        text-align: center;
     }
     .planexample {
         font-size: clamp(26px, 3vw, 36px);
@@ -805,7 +861,7 @@
     z-index: 3;
 }
 .banner__left{
-    width: 39%;
+    width: 40%;
     color: #ffffff;
 }
 .banner__title{
@@ -873,7 +929,7 @@
 .bannerItem__title{
     font-size: min(1.8vw, 20px);
     font-weight: bold;
-    line-height: 1.5;
+    line-height: 1.4;
     text-align: center;
     flex-basis: 80px;
     display: flex;
@@ -909,7 +965,7 @@
         margin-top: 15px;
     }
     .banner__list{
-        padding: min(5vw, 50px) 0;
+        padding: min(7vw, 50px) 0;
         flex-wrap: wrap;  
         justify-content: center;  
         margin-bottom: calc( -1*min(2.7vw, 30px));  
@@ -917,7 +973,7 @@
     .banner__item {
         width: 100%;
         max-width: 218px;
-        margin-bottom: min(2.7vw, 30px);
+        margin-bottom: min(5.7vw, 30px);
     }
     /* .banner__item:nth-child(3n){
         margin-right: 0;
@@ -932,10 +988,11 @@
         height: 63%;
     } */
 }
-@media only screen and (max-width: 488px) {
-    /* .banner::before {
-        height: 75.5%;
-    } */
+@media only screen and (max-width: 486px) {
+    .bannerItem__title{
+        flex-basis: 0;
+        padding: 10px 0;
+    }
 }
 /* <!-- Banner --> */
 .application-form{
